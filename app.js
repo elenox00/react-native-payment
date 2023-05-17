@@ -9,7 +9,9 @@ const paypal = require("paypal-rest-sdk");
 const app =express()
 
 app.engine("ejs", engines.ejs);
-app.set("views", "./views");
+app.set("success", "./success.ejs");
+app.set("index", "./index.ejs");
+app.set("cancel", "./cancel.ejs");
 app.set("view engine", "ejs");
 
 app.use(bodyParser.json());
